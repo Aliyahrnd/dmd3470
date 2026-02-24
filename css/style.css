@@ -158,15 +158,18 @@ p.lead {
 }
 
 
-/*.img-holder {
-    animation-name: image;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+.dualphone {
+    transform: scale(0.5);
     opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
-@keyframes image {
+
+.dualphone.show {
+    transform: scale(1);
+    opacity: 1;
+}
+/*@keyframes dualphone {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -176,6 +179,27 @@ p.lead {
         transform: translateY(0);
     }
 }*/
+
+.perspectivephone {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.perspectivephone.show {
+    transform: scale(1);
+    opacity: 1;
+}
+.second-iphone {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.second-iphone.show {
+    transform: scale(1);
+    opacity: 1;
+}
 
 /*--------my stuff-----*/
 

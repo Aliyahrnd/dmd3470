@@ -58,7 +58,25 @@ URI     : https://colorlib.com
         </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        
+            const popups = document.querySelectorAll('.dualphone, .perspectivephone, .second-iphone');
+        
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, { threshold: 0.3 });
+        
+            popups.forEach(popup => observer.observe(popup));
+        
+        });
+        </script>
 
+        
     <header class="bg-gradient" id="home">
         <div class="container mt-5">
         
@@ -146,7 +164,7 @@ URI     : https://colorlib.com
                 </div>
             </div>
             <div class="perspective-phone">
-                <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+                <img src="images/perspective.png" alt="perspective phone" class="img-fluid perspectivephone">
             </div>
         </div>
 
@@ -249,7 +267,7 @@ URI     : https://colorlib.com
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid dualphone">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
@@ -296,7 +314,7 @@ URI     : https://colorlib.com
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/iphonex.png" alt="iphone" class="img-fluid">
+                    <img src="images/iphonex.png" alt="iphone" class="img-fluid second-iphone">
                 </div>
 
             </div>
