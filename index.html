@@ -57,25 +57,6 @@ URI     : https://colorlib.com
             </div>
         </div>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        
-            const popups = document.querySelectorAll('.dualphone, .perspectivephone, .second-iphone');
-        
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                    }
-                });
-            }, { threshold: 0.3 });
-        
-            popups.forEach(popup => observer.observe(popup));
-        
-        });
-        </script>
-
         
     <header class="bg-gradient" id="home">
         <div class="container mt-5">
@@ -537,6 +518,23 @@ URI     : https://colorlib.com
             <a href="#" class="m-2">PRIVACY</a>
         </small>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        
+            const popups = document.querySelectorAll('.dualphone, .perspectivephone, .second-iphone');
+        
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, { threshold: 0.3 });
+        
+            popups.forEach(popup => observer.observe(popup));
+        
+        });
+        </script>
 
     <!-- jQuery and Bootstrap -->
     <script src="js/jquery-3.2.1.min.js"></script>
