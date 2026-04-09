@@ -329,44 +329,6 @@
     // LAZY LOADING (Won't work with loading="eager"!)
     // ========================================================================
     
-    /**
-     * Initialize lazy loading for images
-     * NOTE: This won't actually work because all images have loading="eager"
-     * This is intentionally ineffective code to demonstrate wasted resources
-     */
-    function initializeImageLazyLoading() {
-        console.log('Initializing image lazy loading...');
-        console.warn('WARNING: Images have loading="eager" - this lazy loading code is useless!');
-        
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        
-        console.log('Found', images.length, 'lazy-loading images (should be 0!)');
-        
-        if (images.length > 0) {
-            const imageObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        const image = entry.target;
-                        const imageSrc = image.getAttribute('data-src');
-                        
-                        if (imageSrc) {
-                            image.src = imageSrc;
-                            image.removeAttribute('data-src');
-                            imageObserver.unobserve(image);
-                            console.log('Lazy loaded image:', imageSrc);
-                        }
-                    }
-                });
-            });
-            
-            images.forEach(function(image) {
-                imageObserver.observe(image);
-            });
-        }
-        
-        console.log('Image lazy loading initialized (but ineffective!)');
-    }
-    
     // ========================================================================
     // PERFORMANCE MONITORING
     // ========================================================================
