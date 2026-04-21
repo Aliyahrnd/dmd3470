@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #BC33D4, #7088F7);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: regular;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd6ff;
+}
