@@ -1,26 +1,119 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    height: 100vh;
-    background: linear-gradient(135deg, #BC33D4, #7088F7);
 }
 
-/* Navbar */
+section,
+.hero,
+.content,
 nav {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #302C2B, #33BF65);
+    color: white;
+}
+
+/* NAVBAR (Mobile First) */
+nav {
+    
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.logo {
+    width: 20px;
+}
+
+.links {
     display: flex;
-    justify-content: space-around;
-    align-items: right;
-    padding: 15px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-weight: regular;
-    font-size: 14px;
+    font-size: 10px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ffd6ff;
+    color: #c7d4c6;
+}
+
+
+/* HERO CONTENT (Mobile First) */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.hero h1 {
+    font-size: 28px;
+}
+.hero p {
+    font-size: 12px;
+}
+.lifestyle {
+    color: #33BF65;
+}
+
+.hero-img {
+    width: 180px;
+    max-width: 90%;
+}
+
+/*------------------------------------MEDIA QUERIES (Hero Content)------------------------------------*/
+@media (min-width: 768px) {
+    section,
+    .hero,
+    .content,
+    nav {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .links {
+        gap: 40px;
+        flex-wrap: nowrap;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        margin-top: 0px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero-img {
+        width: 600px;
+    }
 }
