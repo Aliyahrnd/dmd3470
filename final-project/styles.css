@@ -479,6 +479,91 @@ nav a:hover {
     justify-content: center;
     gap: 20px;
 }
+
+
+.dd-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.dd-btn {
+    background: white;
+    color: #29a655; /* green text */
+    border: none;
+    padding: 18px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
+    transition: 0.3s ease;
+}
+
+.dd-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/*tutorial section*/
+
+.tutorial {
+    position: relative;
+    height: 500px;
+    background: url("imgs/watch-tutorial-img.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.tutorial-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+
+.tutorial h1 {
+    position: relative;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.play-btn {
+    position: relative;
+    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.tutorial:hover .tutorial-overlay {
+    background: rgba(51, 191, 101, 0.6); 
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+    background: #0f9437;
+}
 /*------------------------------------MEDIA QUERIES------------------------------------*/
 @media (min-width: 768px) {
 
@@ -519,7 +604,7 @@ nav a:hover {
     }
 
     .hero p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .hero-img {
@@ -743,4 +828,19 @@ nav a:hover {
     margin: 150px auto 30px;
     max-width: 50%;
 }
+
+
+    .dd-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .dd-btn {
+        width: auto;
+        padding: 20px 60px;
+        font-size: 18px;
+    }
+
+
 }
