@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 section,
@@ -12,20 +12,20 @@ nav {
 }
 
 .hero {
-    min-height: 100vh;
+    min-height: 40vh;
     background: linear-gradient(135deg, #302C2B, #33BF65);
     color: white;
 }
 
 /* NAVBAR (Mobile First) */
 nav {
-    
-display: flex;
-justify-content: space-between;
-align-items: center;
 
-padding-top: 20px;
-padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -65,9 +65,11 @@ nav a:hover {
 .hero h1 {
     font-size: 28px;
 }
+
 .hero p {
     font-size: 12px;
 }
+
 .lifestyle {
     color: #33BF65;
 }
@@ -77,14 +79,419 @@ nav a:hover {
     max-width: 90%;
 }
 
-/*------------------------------------MEDIA QUERIES (Hero Content)------------------------------------*/
+/* content section mobile first */
+.content {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.content h1 {
+    font-size: 28px;
+    color: #1f2a56;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    font-size: 14px;
+    color: #6c7a89;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* STACKED layout on mobile */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* ICON */
+.card img {
+    width: 45px;
+    margin-bottom: 15px;
+}
+
+/* TITLE */
+.card h3 {
+    font-size: 18px;
+    color: #1f2a56;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.card p {
+    font-size: 14px;
+    color: #6c7a89;
+    line-height: 1.6;
+}
+
+/*howitworks section*/
+/* HOW IT WORKS */
+.how-it-works {
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.how-it-works h1 {
+    font-size: 26px;
+    color: #1f2a56;
+    margin-bottom: 40px;
+}
+
+.how-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* STEPS */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* SINGLE STEP */
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    text-align: left;
+}
+
+/* ICON */
+.step img {
+    width: 60px;
+    padding: 12px;
+    border: 2px solid #48dd75;
+    border-radius: 50%;
+}
+
+
+/* TEXT */
+.step h3 {
+    margin: 0 0 5px;
+    color: #1f2a56;
+    font-size: 18px;
+}
+
+.step p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #6c7a89;
+    line-height: 1.5;
+}
+
+/* PHONE IMAGE */
+.phone img {
+    width: 220px;
+    max-width: 100%;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.store-buttons img {
+    width: 260px;
+    max-width: 100%;
+}
+
+/* management div*/
+
+.management {
+    padding: 60px 20px;
+}
+
+
+.management-container {
+    display: flex;
+    flex-direction: column;   /* stack on mobile */
+    align-items: center;
+}
+
+
+.management-img img {
+    width: 200px;       /* mobile size */
+    max-width: 100%;
+}
+
+/* 
+.bg-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}*/
+
+/* TEXT SIDE */
+.management-text {
+    text-align: center;
+}
+
+.manage-icon {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.management-text h1 {
+    font-size: 24px;
+    color: #1f2a56;
+    margin-bottom: 15px;
+}
+
+.management-text p {
+    font-size: 14px;
+    color: #6c7a89;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+/* BUTTON */
+.read-btn {
+    background: linear-gradient(135deg, #5a595b, #29a655);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*responsive*/
+
+.responsive {
+    padding: 60px 20px;
+}
+
+
+.responsive-container {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+
+.responsive img {
+    width: 200px;     
+    max-width: 100%;
+}
+
+
+/* TEXT SIDE */
+.responsive-text {
+    text-align: center;
+}
+
+
+.responsive-text h1 {
+    font-size: 24px;
+    color: #1f2a56;
+    margin-bottom: 15px;
+}
+
+.responsive-text p {
+    font-size: 14px;
+    color: #6c7a89;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+/* pricing section*/
+
+.pricing {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 26px;
+    color: #1f2a56;
+    margin-bottom: 40px;
+}
+
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.price-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+
+.plan {
+    color: #4dd63b;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    color: #1f2a56;
+    margin-bottom: 10px;
+}
+
+.billing {
+    font-size: 13px;
+    color: #6c7a89;
+    margin-bottom: 25px;
+}
+
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.price-card li {
+    font-size: 14px;
+    color: #9aa7b1;
+    margin-bottom: 10px;
+}
+
+.price-card li.active {
+    color: #1f2a56;
+}
+
+.price-btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #4dd63b;
+    color: #4dd63b;
+    transition: all 0.3s ease;
+}
+
+
+.price-btn:hover {
+    background: linear-gradient(135deg, #5a595b, #29a655);
+    border: none;
+    color: white;
+}
+
+
+.highlight {
+    border-top: 6px solid #24692a;
+
+}
+
+/*review section*/
+
+/* REVIEW SECTION */
+.review {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.review-title {
+    font-size: 26px;
+    color: #1f2a56;
+    margin-bottom: 60px;
+}
+
+/* CARD */
+.review-card {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    padding: 60px 20px 30px;
+    border: 2px solid #4dd63b;
+}
+
+/* PROFILE IMAGE */
+.review-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #4dd63b;
+
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+/* TEXT */
+.review-text {
+    font-size: 14px;
+    color: #1f2a56;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* NAME */
+.review-name {
+    font-size: 14px;
+    color: #1f2a56;
+    font-weight: 500;
+}
+
+/* download section*/
+
+.download {
+    min-height: 40vh;
+    background: linear-gradient(135deg, #302C2B, #33BF65);
+    color: white;
+}
+
+.download h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.download p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.download .store-buttons {
+    justify-content: center;
+    gap: 20px;
+}
+/*------------------------------------MEDIA QUERIES------------------------------------*/
 @media (min-width: 768px) {
+
     section,
     .hero,
     .content,
     nav {
         padding-left: 75px;
         padding-right: 75px;
+    }
+
+    .hero {
+        min-height: 100vh;
     }
 
     .logo {
@@ -108,12 +515,232 @@ nav a:hover {
     }
 
     .hero h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
+
     .hero p {
-        font-size: 16px;
+        font-size: 20px;
     }
+
     .hero-img {
         width: 600px;
     }
+
+    /*content section app features*/
+
+    .content {
+        padding: 80px 10%;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .section-desc {
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+
+    .features {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card {
+        width: 300px;
+        padding: 20px 25px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    /*how it works section*/
+
+    .how-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .steps {
+        width: 50%;
+    }
+
+    .phone {
+        width: 50%;
+        text-align: center;
+    }
+
+    .phone img {
+        width: 900px;
+        max-width: 100%;
+    }
+    .how-inner {
+        max-width: 1100px;  
+        margin: 0 auto;      
+    }
+
+    .how-it-works {
+        padding: 80px 20px;
+    }
+
+    .how-it-works h1 {
+        font-size: 40px;
+        color: #1f2a56;
+        margin-bottom: 40px;
+    }
+    .step div {
+        max-width: 250px; }
+
+    .step h3 {
+        font-size: 24px;
+    }
+
+    .step p {
+        font-size: 20px;
+    }
+
+    .store-buttons {
+        flex-wrap: nowrap; 
+    }
+
+    .management {
+        padding: 100px 10%;
+        min-height: 80vh;
+    }
+
+    .management-container {
+        flex-direction: row;  
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .management-img img {
+        width: 600px;   
+    }
+
+
+    .management-text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .management-text h1 {
+        font-size: 40px;
+    }
+
+    .management-text p {
+        margin: 0 0 25px;
+        font-size: 20px;
+    }
+
+    /*responsive section*/
+    .responsive {
+        padding: 80px 10%;
+        min-height: 80vh;
+    }
+
+    .responsive-container {
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .responsive img {
+        width: 700px;  
+    }
+
+    .responsive-text {
+        width: 90%;
+        text-align: left;
+    }
+
+    .responsive-text h1 {
+        font-size: 40px;
+    }
+
+    .responsive-text p {
+        margin: 0 0 25px;
+        font-size: 20px;
+    }
+
+    /* PRICING DESKTOP */
+.pricing {
+    padding: 100px 10%;
+}
+
+.pricing-title {
+    font-size: 40px;
+}
+
+.pricing-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-card {
+    width: 32%;
+    padding: 40px 30px;
+}
+
+.price {
+    font-size: 36px;
+}
+
+.price-card li {
+    font-size: 16px;
+}
+
+/* review section*/
+
+/* REVIEW DESKTOP */
+.review {
+    padding: 100px 10%;
+}
+
+.review-title {
+    font-size: 40px;
+}
+
+.review-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 60px 40px;
+}
+
+.review-text {
+    font-size: 18px;
+}
+
+.review-name {
+    font-size: 18px;
+}
+
+.review-img {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+}
+
+.download {
+    padding: 60px 10%;
+    min-height: 15vh;
+}
+.download h1 {
+    font-size: 56px;
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.download p {
+    font-size: 16px;
+    text-align: center;
+    margin: 150px auto 30px;
+    max-width: 50%;
+}
 }
