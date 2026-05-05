@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 section,
 .hero,
@@ -93,7 +96,7 @@ nav a:hover {
 }
 
 .section-desc {
-    font-size: 14px;
+    font-size: 16px;
     color: #6c7a89;
     margin-bottom: 40px;
     line-height: 1.6;
@@ -686,7 +689,7 @@ nav a:hover {
     }
 
     .step p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .store-buttons {
@@ -720,12 +723,12 @@ nav a:hover {
 
     .management-text p {
         margin: 0 0 25px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /*responsive section*/
     .responsive {
-        padding: 80px 10%;
+        padding: 50px 5%;
         min-height: 80vh;
     }
 
@@ -733,15 +736,15 @@ nav a:hover {
         display: flex;
         flex-direction: row;  
         justify-content: space-between;
-        gap: 30px;
+        gap: 10px;
     }
 
     .responsive img {
-        width: 700px;  
+        width: 900px;  
     }
 
     .responsive-text {
-        width: 90%;
+        width: 80%;
         text-align: left;
     }
 
@@ -751,7 +754,7 @@ nav a:hover {
 
     .responsive-text p {
         margin: 0 0 25px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* PRICING DESKTOP */
